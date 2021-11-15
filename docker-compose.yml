@@ -1,0 +1,18 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  api:
+    image: freddy169/container-api
+    build: .
+    ports:
+      - "9000:9000"  
+    environment: 
+      - PORT=9000
+  paulApi:
+    image: freddy169/container-api
+    build: .
+    ports:
+      - "8080:8080"  
+    environment: 
+      - PORT=8080
+
+   
